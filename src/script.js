@@ -121,7 +121,7 @@ function navigasi() {
   audioPlay.play();
 }
 playGame.addEventListener("click", () => {
-  // audioPlay.setAttributeNode("autoplay");
+  const audioPlay = document.getElementById("audio");
   navigasi();
   const interval = setInterval(updateCountDownd, 1000);
   function updateCountDownd() {
@@ -132,7 +132,7 @@ playGame.addEventListener("click", () => {
     time--;
     if (time < 0) {
       clearTimeout(interval);
-      bel.pause();
+      audioPlay.pause();
       stopQuis();
     }
   }
