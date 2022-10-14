@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/output.css" />
+    <title>Pengetahuan Islam</title>
+  </head>
+  <body class="bg-gradient-to-r from-violet-400 to-black">
+    <div id="akhir-game" class="relative hidden">
+      <div class="w-screen h-screen absolute">
+        <div
+          class="container w-[80%] h-full border px-3 bg-white border-orange-900 shadow-xl mx-auto my-[100px]"
+        >
+          <div class="text-center p-4">
+            <h2
+              class="text-5xl font-bold p-2 underline bg-gradient-to-r from-orange-700 to-orange-300 bg-clip-text text-transparent"
+            >
+              Penghargaan
+            </h2>
+            <h2 class="text-3xl font-medium text-orange-600">
+              Diberikan Kepada
+            </h2>
+          </div>
+          <div>
+            <h2 class="text-center font-bold text-3xl" id="nama-pemain"></h2>
+            <p class="text-center mx-3" id="Score"></p>
+          </div>
+          <p class="font-serif mt-2 p-4 text-center">
+            Saya Ucapkan Terimakasih Telah Berpartisipasi dalam kuis ini
+          </p>
+          <div class="p-6 mt-5">
+            <p class="text-center">Hormat Saya,</p>
+            <p class="text-center">Pengembang</p>
+            <h3 class="text-center font-mono font-bold">SUSILA TROPIKA</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="h-5 w-full py-3 text-center">
+      <div
+        id="aksi"
+        class="w-[300px] mx-auto rounded-md p-2 bg-white flex justify-center"
+      >
+        <h2 class="mr-2">Durasi</h2>
+        <h2 id="countdown" class="px-3 border-l-2">00:00</h2>
+        <audio id="audio" controls class="ml-4 h-5 hidden">
+          <source src="assets/musik.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </header>
+    <section class="pt-20 w-full">
+      <div class="container w-full max-w-[550px] m-auto text-center">
+        <div id="welcome" class="w-full">
+          <h1
+            class="text-4xl font-bold bg-gradient-to-r from-orange-700 to-orange-300 bg-clip-text text-transparent"
+          >
+            Selamat Datang Di Permainan islami
+          </h1>
+          <h2
+            class="text-2xl my-8 font-bold bg-gradient-to-r from-violet-400 to-rose-600 bg-clip-text text-transparent"
+          >
+            Masukan Nama Anda
+          </h2>
+          <input
+            class="w-[300px] h-[50px] p-3 rounded-xl bg-slate-400 text-3xl border border-orange-700 text-center"
+            type="text"
+          />
+          <p class="my-4 text-white">Apakah Kalian Siap Bermain?</p>
+          <button
+            id="play"
+            class="mr-5 px-4 h-10 w-20 cursor-pointer text-white bg-blue-500 rounded-md text-xl hover:bg-orange-900 transition duration-500"
+          >
+            Siap
+          </button>
+        </div>
+        <div id="quis" class="w-full hidden">
+          <div class="h-20">
+            <h2 id="pertanyaan" class="text-yellow-400 text-2xl mb-10"></h2>
+          </div>
+          <div class="flex justify-between flex-wrap [&>*]:m-2 [&>*]:w-[45%]">
+            <button class="style-button">1</button>
+            <button class="style-button">2</button>
+            <button class="style-button">3</button>
+            <button class="style-button">4</button>
+          </div>
+          <button
+            id="next"
+            class="bg-red-900 w-full font-bold mt-5 h-14 rounded-tr-full text-white rounded-bl-full hover:bg-orange-500"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

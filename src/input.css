@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.hiden-Model {
+  display: none;
+}
+.style-button {
+  font-weight: 500;
+  color: #f6dcbf;
+  border-radius: 15px;
+  background-color: red;
+  height: 60px;
+  @apply shadow-lg hover:bg-orange-900;
+}
+.A-true {
+  font-weight: 500;
+  color: #f6dcbf;
+  border-radius: 15px;
+  height: 60px;
+  background-color: green !important;
+  @apply shadow-lg hover:bg-orange-900;
+}
